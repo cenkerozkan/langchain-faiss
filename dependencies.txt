@@ -1,0 +1,16 @@
+CORE DEPENDENCIES (Can not be migrated, will be used as it is.)
+----------------------------------------------------------------
+Document --> langchain_core/documents/base.py
+Embeddings --> langchain_core/embeddings/embeddings.py
+run_in_executor --> langchain_core/runnables/config.py
+VectorStore --> langchain_core/vectorstores/base.py
+
+
+
+COMMUNITY DEPENDENCIES (Can be migrated into standalone package, if possible)
+------------------------------------------------------------------------------
+AddableMixin --> langchain_community/docstore/base.py (Migrate here) (has core dependencies)
+DocStore --> langchain_community/docstore/base.py (Migrate here) (has core dependencies)
+InMemoryDocstore --> langchain_community/docstore/in_memory.py (migrate here) (has core dependencies)
+DistanceStrategy --> langchain_community/vectorstores/utils.py (migrate here) (has core dependencies)
+max_marginal_relevance --> langchain_community/vectorstores/utils.py (migrate here) (has core dependencies)
