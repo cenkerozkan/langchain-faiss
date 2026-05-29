@@ -10,9 +10,6 @@ __pycache__/
 *$py.class
 *.pyo
 
-# Dependencies (managed via pyproject.toml)
-requirements.txt
-requirements*.txt
 
 # Distribution / packaging
 dist/
